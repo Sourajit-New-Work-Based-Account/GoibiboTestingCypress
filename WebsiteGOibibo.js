@@ -134,7 +134,7 @@ describe('Goibibo.com Portal ',() => {
     })
 
     //card no-
-    cy.get("#card > div.paymentContent > div > div.newCardDetail > div:nth-child(3) > div.col-md-5.col-sm-5.col-xs-12.pad0.cr_crd_no_p > div.width100.fl.padT5.padB10 > div > input[type='text']").type('6080320414500183');
+    cy.get("#card > div.paymentContent > div > div.newCardDetail > div:nth-child(3) > div.col-md-5.col-sm-5.col-xs-12.pad0.cr_crd_no_p > div.width100.fl.padT5.padB10 > div > input[type='text']").type('6080320414500184');
     cy.wait(100);
     //card name-
     cy.get("#card > div.paymentContent > div > div.newCardDetail > div:nth-child(3) > div.col-md-5.col-sm-5.col-xs-12.pad0.cr_crd_name_p > div.width100.fl.padT5.padB10 > div > input[type='text']").type('First Name');
@@ -147,6 +147,7 @@ describe('Goibibo.com Portal ',() => {
     cy.get("#card > div.paymentContent > div > div.newCardDetail > div.fl.padT15.col-md-5.col-sm-5.col-xs-12 > div.col-md-6.col-sm-6.col-xs-6.pad0.cr_cvv_no_p > div:nth-child(1) > input[type='password']").type('123');
     cy.wait(100);
 
+    //expiry date
     cy.get("#card > div.paymentContent > div > div.newCardDetail > div.fl.padT15.col-md-5.col-sm-5.col-xs-12 > div.col-md-6.col-sm-6.col-xs-6.pad0.cr_crd_exp_p > div.width100.fl.padT5.padB10 > div > input[type='text']").type('0626')
     //Pay-
     cy.get("#card > div.paymentContent > div > div.width100.fl.payNow > div.col-md-6.col-sm-6.col-xs-12.pad0.displayFlex > div.col-md-8.col-sm-8.col-xs-8.marginT5 > button").click({force:true});
